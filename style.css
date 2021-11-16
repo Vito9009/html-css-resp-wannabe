@@ -75,10 +75,11 @@ img {
 /* VERSIONE PER SMARTPHONE */
 
 @media screen and (max-width: 420px) {
-  body{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size: 12px;
   }
 
   .container.grey{
@@ -86,34 +87,28 @@ img {
   }
 
   h1{
-    font-size: 50px;
+    font-size: 25px;
+    margin-bottom: 10px;
   }
 
   h3{
-    font-size: 30px;
+    font-size: 15px;
     margin: 0;
   }
   
-  div{
-    font-size: 25px;
-  }
-
   hr{
     border: 1px solid black;
-    margin: 0;
   }
 
   .row{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin-top: 0;
+    padding: 15px;
+    width: 100%;
   }
   
-  #lezioni .row>.left, #lezioni .row>.right, 
-  #steps .row>.left, #steps .row>.central, #steps .row>.right{
-    width: 95%;
-    margin-bottom: 25px;
+  #lezioni .row .left, #lezioni .row .right, 
+  #steps .row .left, #steps .row .central, #steps .row .right{
+    width: 100%;
   }
 
   #lezioni .row, #why .row{
@@ -121,13 +116,19 @@ img {
     margin-bottom: 0;
   }
 
-  #why .row>.first, #why .row>.second, #why .row>.third{
+  #why .row .first, #why .row .second, #why .row .third{
     margin-top: 0;
-    margin-bottom: 25px;
-    width: 95%;
+  }
+
+  #why .row .first, #why .row .second{
+    margin-bottom: 10px;
+  }
+
+  .row img{
+    height: 100px;
   }
 
   #why .row img{
-    height: 150px;
+    padding: 20px;
   }
 }
