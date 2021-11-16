@@ -75,10 +75,30 @@ img {
 
 
 @media screen and (max-width: 420px) {
+  body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
   .row{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 0;
   }
+  
+  #lezioni .row>.left, #lezioni .row>.right, 
+  #steps .row>.left, #steps .row>.central, #steps .row>.right{
+    width: 100%;
+  }
+
+  #lezioni .row, #why .row{
+    background-color: rgb(242, 242, 205);
+  }
+
+  .container.grey{
+    background-color: rgb(255, 255, 255);
+  }
+
 }
