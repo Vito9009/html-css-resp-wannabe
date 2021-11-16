@@ -132,3 +132,63 @@ img {
     padding: 20px;
   }
 }
+
+/* VERSIONE PER TABLET */
+
+@media screen and (min-width: 421px) and (max-width: 768px) {
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+  }
+
+  .container.grey{
+    background-color: rgb(255, 255, 255);
+  }
+
+  h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  h3{
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  hr{
+    border: 1px solid black;
+  }
+
+  .row{
+    margin-top: 0;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .row .left, .row .central, .row .right{
+    padding: 15px;
+  }
+
+  #lezioni .row, #why .row{
+    background-color: rgb(249, 249, 249);
+    margin-bottom: 0;
+  }
+
+  #why .row .first, #why .row .second, #why .row .third{
+    margin-top: 0;
+  }
+
+  #why .row .first, #why .row .second{
+    margin-bottom: 10px;
+  }
+
+  .row img{
+    height: 100px;
+  }
+
+  #why .row img{
+    padding: 20px;
+  }
+}
